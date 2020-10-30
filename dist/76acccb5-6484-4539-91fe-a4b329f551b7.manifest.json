@@ -1,0 +1,65 @@
+{
+  "id": "76acccb5-6484-4539-91fe-a4b329f551b7",
+  "alias": "NewslinkWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "newslink"
+      },
+      "description": {
+        "default": "Create SharePoint news Link programatically "
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "newslink"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "newslink-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "newslink-web-part": {
+        "type": "path",
+        "path": "dist/newslink-web-part.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js",
+        "globalName": "jQuery"
+      },
+      "NewslinkWebPartStrings": {
+        "defaultPath": "lib/webparts/newslink/loc/en-us.js",
+        "type": "localizedPath"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.11.0",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      }
+    }
+  }
+}

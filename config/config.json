@@ -1,0 +1,21 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+    "version": "2.0",
+    "bundles": {
+        "newslink-web-part": {
+            "components": [{
+                "entrypoint": "./lib/webparts/newslink/NewslinkWebPart.js",
+                "manifest": "./src/webparts/newslink/NewslinkWebPart.manifest.json"
+            }]
+        }
+    },
+    "externals": {
+        "jquery": {
+            "path": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js",
+            "globalName": "jQuery"
+        }
+    },
+    "localizedResources": {
+        "NewslinkWebPartStrings": "lib/webparts/newslink/loc/{locale}.js"
+    }
+}
